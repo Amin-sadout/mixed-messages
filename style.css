@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  margin: 0;
+  padding: 40px 16px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+}
+
+#quoteList {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#quoteList li {
+  margin-bottom: 12px;
+}
+
+#outputBox {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+#outputQuote {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+#outputInfo {
+  color: #555;
+}
