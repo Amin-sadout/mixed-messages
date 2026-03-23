@@ -3,29 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anime Quote Generator</title>
+  <title>we managing numbers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Add your favorite anime quote to the list</h1>
+    <h1>Number Manager?</h1>
 
-    <div class="form-box">
-      <input id="charInput" type="text" placeholder="Character name" />
-      <input id="animeInput" type="text" placeholder="Anime name" />
-      <textarea id="quoteInput" placeholder="Write your favorite quote"></textarea>
-      <p id="errorMsg"></p>
-      <button id="addBtn">Add it to the list Senpai</button>
+    <div class="controls">
+      <input id="numberInput" type="number" placeholder="Enter a number" />
+      <button id="addBtn">Add it</button>
+      <button id="resetBtn">Reset it</button>
     </div>
 
-    <!-- <ul id="quoteList"></ul> i changed my mind on this right now but i feel like i'll use it at some point -->
+    <p id="message"></p>
 
-    <button id="generateBtn">Generate a Quote</button>
-
-    <div id="outputBox">
-      <p id="quoteOutput">Your anime quote will appear here.</p>
-      <p id="infoOutput"></p>
+    <div class="summary">
+      <p>Total items: <span id="totalCount">0</span></p>
+      <p>Odd sum: <span id="oddSum">0</span></p>
+      <p>Even sum: <span id="evenSum">0</span></p>
     </div>
+
+    <ul id="numberList"></ul>
   </div>
 
   <script src="script.js"></script>
