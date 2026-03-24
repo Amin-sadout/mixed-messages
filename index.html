@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>we managing numbers</title>
+  <title>Anime Quote Generator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Number Manager?</h1>
+    <h1>Anime Quote Generator</h1>
 
-    <div class="controls">
-      <input id="numberInput" type="number" placeholder="Enter a number" />
-      <button id="addBtn">Add it</button>
-      <button id="resetBtn">Reset it</button>
+
+    <div class="form-box">
+      <input id="charInput" type="text" placeholder="Character name" />
+      <input id="animeInput" type="text" placeholder="Anime name" />
+      <textarea id="quoteInput" placeholder="Write the quote"></textarea>
+      <button id="addBtn">Add Quote</button>
+      <p id="errorMsg"></p>
     </div>
 
-    <p id="message"></p>
+    <button id="generateBtn">Generate a Quote</button>
 
-    <div class="summary">
-      <p>Total items: <span id="totalCount">0</span></p>
-      <p>Odd sum: <span id="oddSum">0</span></p>
-      <p>Even sum: <span id="evenSum">0</span></p>
+    <div id="outputBox">
+      <p id="quoteOutput">Which Quote would you recieve first ay?</p>
+      <p id="infoOutput"></p>
     </div>
-
-    <ul id="numberList"></ul>
   </div>
+
+  <footer><button id="themeBtn">Dark Mode</button></footer>
 
   <script src="script.js"></script>
 </body>
